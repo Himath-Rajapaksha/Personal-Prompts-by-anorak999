@@ -4,6 +4,17 @@ A curated collection of **production-grade, multi-LLM system prompts** optimized
 
 ---
 
+## 📋 Prompt Index
+
+| # | Prompt | File | Purpose |
+|---|--------|------|---------|
+| 1 | **VECNA** | [`VECNA/VECNA_Finalized_Multi_LLM.md`](VECNA/VECNA_Finalized_Multi_LLM.md) | Code Efficiency Auditor — performance bottleneck analysis |
+| 2 | **BLOB** | [`BLOB/BLOB_Finalized_Multi_LLM.md`](BLOB/BLOB_Finalized_Multi_LLM.md) | Production Code Security Auditor — deep-dive security review |
+| 3 | **ZETA** | [`ZETA/ZETA_Finalized_Multi_LLM.md`](ZETA/ZETA_Finalized_Multi_LLM.md) | AI Prompt Optimizer (Lyra v2) — vague-to-precise prompt engineering |
+| — | **GitCore** | [`version-control.md`](version-control.md) | Four-Tier Branching Strategy — version control enforcement |
+
+---
+
 ## 🎯 What's Inside
 
 Three specialized prompts, each available in **5 native formats** (Claude, GPT, Gemini, Llama, Mistral):
@@ -23,6 +34,8 @@ Analyze codebases for performance bottlenecks and deliver quantified optimizatio
 - Up to 2 solution options per issue with pros/cons analysis
 - Best-fit recommendation with efficiency-to-effort justification
 - Annotated code changes with inline rationale and test/deployment instructions
+
+➡️ **[Open VECNA](VECNA/VECNA_Finalized_Multi_LLM.md)**
 
 ---
 
@@ -44,6 +57,8 @@ Deep-dive code reviews to surface every issue degrading stability, security, per
 - Code-ready fix suggestions
 - Confidence levels (High/Medium/Low) for each finding
 
+➡️ **[Open BLOB](BLOB/BLOB_Finalized_Multi_LLM.md)**
+
 ---
 
 ### **ZETA** — AI Prompt Optimizer (Lyra v2)
@@ -57,6 +72,15 @@ Transform vague requests into precise, high-performing prompts tuned for any LLM
   - Advanced techniques (chain-of-thought, few-shot examples, multi-perspective analysis)
 - **Platform-Specific Optimization**: Tailored guidance for ChatGPT, Claude, Gemini, and others
 - **Actionable Output**: Optimized prompt + change summary + techniques applied + pro tips
+
+➡️ **[Open ZETA](ZETA/ZETA_Finalized_Multi_LLM.md)**
+
+---
+
+### **GitCore** — Version Control Enforcement
+Four-Tier Branching Strategy (`feature` → `dev` → `staging` → `main`) with ironclad branch protection rules, migration plan, and compliance verification.
+
+➡️ **[Open GitCore](version-control.md)**
 
 ---
 
@@ -99,7 +123,7 @@ Paste the prompt into your chat or API call. Reference the placeholder (e.g., `{
 ### VECNA: Review a Python Service for Performance Issues
 
 ```
-# Copy the Claude XML variant from VECNA_Finalized_Multi_LLM.md
+# Copy the Claude XML variant from VECNA/VECNA_Finalized_Multi_LLM.md
 # Paste it, then follow with:
 
 Here's my codebase:
@@ -118,7 +142,7 @@ Here's my codebase:
 ### BLOB: Security Audit a Node.js API
 
 ```
-# Copy the GPT Markdown variant from BLOB_Finalized_Multi_LLM.md
+# Copy the GPT Markdown variant from BLOB/BLOB_Finalized_Multi_LLM.md
 # Paste it, then follow with:
 
 Review this API codebase (in current directory):
@@ -139,7 +163,7 @@ Review this API codebase (in current directory):
 ### ZETA: Optimize a Vague User Prompt
 
 ```
-# Copy the Claude XML variant from ZETA_Finalized_Multi_LLM.md
+# Copy the Claude XML variant from ZETA/ZETA_Finalized_Multi_LLM.md
 # Paste it, then follow with:
 
 DETAIL using Claude — I need a script that takes CSV data and does something useful with it.
@@ -186,6 +210,11 @@ Each prompt balances **depth** (comprehensive coverage of risk categories) with 
 - You need **structured step-by-step reasoning** for complex tasks
 - You want **fewer iterations** with your AI assistant
 
+### **GitCore** — Use When:
+- Setting up or migrating a repository to a professional branching model
+- Enforcing branch protection rules and CI/CD gates
+- Auditing branch hygiene and compliance
+
 ---
 
 ## 🔧 Advanced: Custom Adaptations
@@ -203,11 +232,15 @@ Each prompt is modular. You can:
 
 ```
 Personal-Prompts-by-anorak999/
-├── VECNA_Finalized_Multi_LLM.md    # Efficiency auditor (5 variants)
-├── BLOB_Finalized_Multi_LLM.md     # Security auditor (5 variants)
-├── ZETA_Finalized_Multi_LLM.md     # Prompt optimizer (5 variants)
-├── README.md                         # This file
-└── LICENSE                           # MIT
+├── VECNA/
+│   └── VECNA_Finalized_Multi_LLM.md    # Efficiency auditor (5 variants)
+├── BLOB/
+│   └── BLOB_Finalized_Multi_LLM.md     # Security auditor (5 variants)
+├── ZETA/
+│   └── ZETA_Finalized_Multi_LLM.md     # Prompt optimizer (5 variants)
+├── version-control.md                    # GitCore branching strategy
+├── README.md                             # This file
+└── LICENSE                               # MIT
 ```
 
 ---
@@ -234,6 +267,7 @@ Personal-Prompts-by-anorak999/
 3. **Auto-mode selection**: ZETA detects complexity; trust its BASIC vs DETAIL choice or override explicitly
 4. **Diff support**: BLOB is especially powerful when you provide a diff (change_impact category activates)
 5. **Reuse optimized prompts**: Save the ZETA-optimized results and reuse them across your team
+6. **GitCore first**: Apply the branching strategy before starting collaborative work — retrofitting is harder than starting clean
 
 ---
 
@@ -256,6 +290,8 @@ Future iterations may include:
 - Domain-specific prompts (ML/AI audit, API design review, infrastructure)
 - Integration templates (GitHub Actions, CI/CD pipelines)
 - Automated prompt testing/evaluation framework
+
+---
 
 ---
 
