@@ -11,7 +11,7 @@ A curated collection of **production-grade, multi-LLM system prompts** optimized
 | 1 | **VECNA** | [`VECNA/VECNA_Finalized_Multi_LLM.md`](VECNA/VECNA_Finalized_Multi_LLM.md) | Code Efficiency Auditor — performance bottleneck analysis |
 | 2 | **BLOB** | [`BLOB/BLOB_Finalized_Multi_LLM.md`](BLOB/BLOB_Finalized_Multi_LLM.md) | Production Code Security Auditor — deep-dive security review |
 | 3 | **ZETA** | [`ZETA/ZETA_Finalized_Multi_LLM.md`](ZETA/ZETA_Finalized_Multi_LLM.md) | AI Prompt Optimizer (Lyra v2) — vague-to-precise prompt engineering |
-| — | **GitCore** | [`version-control.md`](version-control.md) | Four-Tier Branching Strategy — version control enforcement |
+| — | **X99 (GitCore)** | [`version-control.md`](version-control.md) | Git architecture enforcer persona — Four-Tier Branching Strategy |
 
 ---
 
@@ -77,10 +77,10 @@ Transform vague requests into precise, high-performing prompts tuned for any LLM
 
 ---
 
-### **GitCore** — Version Control Enforcement
-Four-Tier Branching Strategy (`feature` → `dev` → `staging` → `main`) with ironclad branch protection rules, migration plan, and compliance verification.
+### **X99 (GitCore)** — Git Architecture Enforcer Persona
+A persona-based prompt (like VECNA/BLOB/ZETA) that acts as X99, an uncompromising Git enforcer. Imposes the GitCore Four-Tier Branching Strategy (`feature` → `dev` → `staging` → `main`) as the permanent, non-negotiable standard, with ironclad rules, migration plan, branch protection, and ready-to-run git commands.
 
-➡️ **[Open GitCore](version-control.md)**
+➡️ **[Open X99 (GitCore)](version-control.md)**
 
 ---
 
@@ -210,10 +210,11 @@ Each prompt balances **depth** (comprehensive coverage of risk categories) with 
 - You need **structured step-by-step reasoning** for complex tasks
 - You want **fewer iterations** with your AI assistant
 
-### **GitCore** — Use When:
+### **X99 (GitCore)** — Use When:
 - Setting up or migrating a repository to a professional branching model
 - Enforcing branch protection rules and CI/CD gates
 - Auditing branch hygiene and compliance
+- You want an LLM to act as a strict Git/DevOps enforcer persona
 
 ---
 
