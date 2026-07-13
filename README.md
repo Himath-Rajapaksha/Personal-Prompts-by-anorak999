@@ -11,13 +11,14 @@ A curated collection of **production-grade, multi-LLM system prompts** optimized
 | 1 | **VECNA** | [`VECNA/VECNA_Finalized_Multi_LLM.md`](VECNA/VECNA_Finalized_Multi_LLM.md) | Code Efficiency Auditor — performance bottleneck analysis |
 | 2 | **BLOB** | [`BLOB/BLOB_Finalized_Multi_LLM.md`](BLOB/BLOB_Finalized_Multi_LLM.md) | Production Code Security Auditor — deep-dive security review |
 | 3 | **ZETA** | [`ZETA/ZETA_Finalized_Multi_LLM.md`](ZETA/ZETA_Finalized_Multi_LLM.md) | AI Prompt Optimizer (Lyra v2) — vague-to-precise prompt engineering |
+| 4 | **GENIE** | [`GENIE/GENIE_Finalized_Multi_LLM.md`](GENIE/GENIE_Finalized_Multi_LLM.md) | Project Foundation Architect — full project scaffolding + multi-agent orchestration |
 | — | **X99 (GitCore)** | [`version-control.md`](version-control.md) | Git architecture enforcer persona — Four-Tier Branching Strategy |
 
 ---
 
 ## 🎯 What's Inside
 
-Three specialized prompts, each available in **5 native formats** (Claude, GPT, Gemini, Llama, Mistral):
+Four specialized prompts, each available in **5 native formats** (Claude, GPT, Gemini, Llama, Mistral):
 
 ### **VECNA** — Code Efficiency Auditor
 Analyze codebases for performance bottlenecks and deliver quantified optimizations.
@@ -77,6 +78,29 @@ Transform vague requests into precise, high-performing prompts tuned for any LLM
 
 ---
 
+### **GENIE** — Project Foundation Architect & Multi-Agent Orchestration
+Instantly bootstrap any software project with professional structure, intelligent agents, ironclad version control, and comprehensive logging systems.
+
+**Features:**
+- **4-Step Workflow**: Initialize → Architecture Selection → Agent Setup → Foundation Files
+- **Two Orchestration Modes**: One-Man Show (single agent) or Parallel Multi-Agent (multiple specialized agents)
+- **Three Mandatory Foundation Files**: PROJECT_LOG.md, TEST_LOG.md, VERSION_CONTROL.md
+- **Agent Definition Generation**: Creates `agents/[agent-name].md` with operational rules, boundaries, protocols
+- **GitCore Integration**: Enforces X99 Four-Tier Branching Strategy (Feature → Dev → Staging → Main)
+- **Professional Directory Blueprint**: `.git/`, `agents/`, `docs/`, `src/`, `tests/`, plus all foundation files
+
+**Delivers:**
+- Complete project directory structure with all scaffolding files
+- Agent definition files with persona parameters, capabilities, limitations, and decision frameworks
+- PROJECT_LOG.md with ISO 8601 timestamped entries (Author, Action Type, Description, Trigger, Impact)
+- TEST_LOG.md tracking manual, automated, edge-case, and regression test suites
+- VERSION_CONTROL.md with X99-enforced branching strategy, protection rules, and migration plan
+- Execution summary with ready-to-run terminal commands
+
+➡️ **[Open GENIE](GENIE/GENIE_Finalized_Multi_LLM.md)**
+
+---
+
 ### **X99 (GitCore)** — Git Architecture Enforcer Persona
 A persona-based prompt (like VECNA/BLOB/ZETA) that acts as X99, an uncompromising Git enforcer. Imposes the GitCore Four-Tier Branching Strategy (`feature` → `dev` → `staging` → `main`) as the permanent, non-negotiable standard, with ironclad rules, migration plan, branch protection, and ready-to-run git commands.
 
@@ -88,11 +112,10 @@ A persona-based prompt (like VECNA/BLOB/ZETA) that acts as X99, an uncompromisin
 
 All prompts are **optimized 32–62% smaller** than their originals with **zero loss of functionality**:
 
-| Prompt | VECNA | BLOB | ZETA |
-|--------|-------|------|------|
-| **Original** | ~2,000 tokens | ~950 tokens | ~650 tokens |
-| **Optimized** | 850–1,250 tokens | 460–600 tokens | 400–450 tokens |
-| **Savings** | 37–52% | 37–52% | 32–38% |
+| Prompt | VECNA | BLOB | ZETA | GENIE |
+|--------|-------|------|------|-------|
+| **Optimized** | 850–1,250 tokens | 460–600 tokens | 400–450 tokens | 850–1,400 tokens |
+| **Savings** | 37–52% | 37–52% | 32–38% | optimized for 5 LLM-native formats |
 
 ---
 
@@ -110,7 +133,7 @@ All prompts are **optimized 32–62% smaller** than their originals with **zero 
 
 ### 2. Copy the Right Block
 
-Each file (`VECNA_Finalized_Multi_LLM.md`, `BLOB_Finalized_Multi_LLM.md`, `ZETA_Finalized_Multi_LLM.md`) contains all 5 variants. Copy the block matching your LLM.
+Each file (`VECNA_Finalized_Multi_LLM.md`, `BLOB_Finalized_Multi_LLM.md`, `ZETA_Finalized_Multi_LLM.md`, `GENIE_Finalized_Multi_LLM.md`) contains all 5 variants. Copy the block matching your LLM.
 
 ### 3. Paste & Go
 
@@ -210,6 +233,12 @@ Each prompt balances **depth** (comprehensive coverage of risk categories) with 
 - You need **structured step-by-step reasoning** for complex tasks
 - You want **fewer iterations** with your AI assistant
 
+### **GENIE** — Use When:
+- Starting a **new project** and need instant professional scaffolding
+- You want **agent-based orchestration** with defined roles and boundaries
+- Setting up **logging, testing, and version control** systems from day one
+- Need a **complete directory blueprint** with foundation files pre-generated
+
 ### **X99 (GitCore)** — Use When:
 - Setting up or migrating a repository to a professional branching model
 - Enforcing branch protection rules and CI/CD gates
@@ -223,7 +252,7 @@ Each prompt balances **depth** (comprehensive coverage of risk categories) with 
 Each prompt is modular. You can:
 
 - **Adjust focus areas** — VECNA can prioritize memory over I/O by reordering the `<focus_areas>` section
-- **Combine prompts** — Use BLOB first for security, then VECNA for performance of the cleaned code
+- **Combine prompts** — Use GENIE to scaffold, BLOB first for security, then VECNA for performance of the cleaned code
 - **Layer ZETA** — Optimize a vague requirement with ZETA first, then feed the result to VECNA or BLOB
 - **Switch LLM variants mid-stream** — Start with Claude's XML, switch to GPT's Markdown if needed
 
@@ -239,6 +268,8 @@ Personal-Prompts-by-anorak999/
 │   └── BLOB_Finalized_Multi_LLM.md     # Security auditor (5 variants)
 ├── ZETA/
 │   └── ZETA_Finalized_Multi_LLM.md     # Prompt optimizer (5 variants)
+├── GENIE/
+│   └── GENIE_Finalized_Multi_LLM.md    # Project foundation architect (5 variants)
 ├── version-control.md                    # GitCore branching strategy
 ├── README.md                             # This file
 └── LICENSE                               # MIT
@@ -263,7 +294,7 @@ Personal-Prompts-by-anorak999/
 
 ## 🎯 Pro Tips
 
-1. **Combine for max insight**: Use BLOB first (security), then VECNA on the cleaned code (performance)
+1. **Combine for max insight**: Use GENIE to scaffold the project, BLOB for security, then VECNA on the cleaned code (performance)
 2. **Context matters**: Include architecture diagrams, framework info, and deployment constraints when using VECNA or BLOB
 3. **Auto-mode selection**: ZETA detects complexity; trust its BASIC vs DETAIL choice or override explicitly
 4. **Diff support**: BLOB is especially powerful when you provide a diff (change_impact category activates)
@@ -291,6 +322,7 @@ Future iterations may include:
 - Domain-specific prompts (ML/AI audit, API design review, infrastructure)
 - Integration templates (GitHub Actions, CI/CD pipelines)
 - Automated prompt testing/evaluation framework
+- GENIE extensions (cloud provider scaffolding, Docker/K8s templates)
 
 ---
 
