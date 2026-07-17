@@ -1,6 +1,6 @@
 # Personal-Prompts-by-anorak999
 
-A curated collection of production-grade, multi-LLM system prompts optimized for code intelligence, security auditing, and prompt engineering. Each prompt is token-optimized and reformatted to match how different AI models were trained to parse instructions.
+A curated collection of production-grade, multi-LLM system prompts optimized for code intelligence, security auditing, prompt engineering, GNOME extension development, and academic writing. Each prompt is token-optimized and reformatted to match how different AI models were trained to parse instructions.
 
 ---
 
@@ -12,13 +12,15 @@ A curated collection of production-grade, multi-LLM system prompts optimized for
 | 2 | **BLOB** | [`BLOB/BLOB_Finalized_Multi_LLM.md`](BLOB/BLOB_Finalized_Multi_LLM.md) | Production Code Security Auditor -- deep-dive security review |
 | 3 | **ZETA** | [`ZETA/ZETA_Finalized_Multi_LLM.md`](ZETA/ZETA_Finalized_Multi_LLM.md) | AI Prompt Optimizer (Lyra v2) -- vague-to-precise prompt engineering |
 | 4 | **GENIE** | [`GENIE/GENIE_Finalized_Multi_LLM.md`](GENIE/GENIE_Finalized_Multi_LLM.md) | Project Foundation Architect -- full project scaffolding + multi-agent orchestration |
+| 5 | **GXT** | [`GXT/GXT_Finalized_Multi_LLM.md`](GXT/GXT_Finalized_Multi_LLM.md) | GNOME eXtension Toolkit -- recursive extension development checklist |
+| 6 | **WRYT** | [`WRYT/WRYT_Finalized.md`](WRYT/WRYT_Finalized.md) | Academic Writing Assistant -- undergraduate-level assignment writer |
 | -- | **X99 (GitCore)** | [`version-control.md`](version-control.md) | Git architecture enforcer persona -- Four-Tier Branching Strategy |
 
 ---
 
 ## What's Inside
 
-Five specialized prompts, each available in **5 native formats** (Claude, GPT, Gemini, Llama, Mistral):
+Seven specialized prompts, each available in **5 native formats** (Claude, GPT, Gemini, Llama, Mistral):
 
 ---
 
@@ -111,6 +113,55 @@ Instantly bootstrap any software project with professional structure, intelligen
 - Execution summary with ready-to-run terminal commands
 
 [Open GENIE](GENIE/GENIE_Finalized_Multi_LLM.md)
+
+---
+
+### GXT -- GNOME eXtension Toolkit
+
+A recursive checklist for GNOME Shell extension development. Catches the small, repeating set of category mismatches that cause most extension bugs before they become 2-hour debugging sessions.
+
+**Covers:**
+
+- **CHECK 0**: Identity — target GNOME version, surface type, component lifespan, external integrations
+- **CHECK 1**: Import & module hygiene — ESM vs legacy, metadata.json correctness, enable/disable signatures
+- **CHECK 2**: St vs Gtk4 boundary — the #1 recursive bug generator; shell UI vs preferences window widget sets
+- **CHECK 3**: Lifecycle symmetry — enable/disable contracts, signal tracking, timeout cleanup, subprocess teardown
+- **CHECK 4**: Settings & schema — glib-compile-schemas, key name/type matching, bind flags
+- **CHECK 5**: External processes — async subprocess calls, error handling, sane polling intervals
+- **CHECK 6**: Debugging loop breakers — journalctl, nested sessions, Looking Glass, session restart methods
+- **CHECK 7**: Pre-release / packaging — clean install testing, extensions.gnome.org requirements
+
+**Delivers:**
+
+- 8 named check categories you can reference by number ("oh, this is a Check 3 leak")
+- Usage guide mapping symptoms to the right check (new project, intermittent bug, settings issue, subprocess, pre-release)
+- Recursive design — re-run the relevant checks at any point, not just linear stages
+
+[Open GXT](GXT/GXT_Finalized_Multi_LLM.md)
+
+---
+
+### WRYT -- Academic Writing Assistant
+
+A master academic writer specialized exclusively in undergraduate-level assignments. Produces original, error-free academic content with strict adherence to formal tone, Harvard referencing, and plagiarism-free standards.
+
+**Covers:**
+
+- **Tone Protocols**: Complete objectivity, evidence-based phrasing, precision with data/metrics/sources, formal third-person voice
+- **Style Protocols**: Clarity, concision, varied sentence structure, consistent spelling, defined terminology, neutral language
+- **Inclusive Language**: Singular they/them, gender-neutral terms throughout
+- **Structural Requirements**: Harvard in-text citations, complete reference lists, 100% paraphrased originality, professional grammar
+- **Research Report Tone**: Formal, objective, evidence-based scholarly communication
+- **Strict Prohibitions**: Banned words/phrases list, no metaphors/cliches/em dashes/empty structures
+
+**Delivers:**
+
+- Polished undergraduate-level academic content on any topic or assignment
+- Harvard-referenced citations with complete reference list
+- Plagiarism-free, original prose with professional academic tone
+- Compliance with 30+ banned words/phrases and structural prohibitions
+
+[Open WRYT](WRYT/WRYT_Finalized.md)
 
 ---
 
@@ -255,6 +306,22 @@ Each prompt balances **depth** (comprehensive coverage of risk categories) with 
 - Setting up **logging, testing, and version control** systems from day one
 - Need a **complete directory blueprint** with foundation files pre-generated
 
+### GXT -- Use When:
+
+- Building or maintaining a **GNOME Shell extension** and want to catch common bugs early
+- Debugging **intermittent crashes** or "works then breaks" lifecycle issues (Check 3)
+- Getting **silent failures** from settings/schema mismatches (Check 4)
+- Mixing up **St vs Gtk4** widgets (Check 2 — the #1 recursive bug generator)
+- About to **publish to extensions.gnome.org** and need a packaging sanity pass (Check 7)
+
+### WRYT -- Use When:
+
+- Writing an **undergraduate essay**, report, or assignment and need formal academic tone
+- Requiring **Harvard-referenced citations** with a complete reference list
+- Need **plagiarism-free content** that paraphrases thoroughly and uses evidence-based phrasing
+- Producing a **research report** that demands objective, third-person scholarly communication
+- Want to **avoid banned words/phrases** and maintain strict academic prose quality
+
 ### X99 (GitCore) -- Use When:
 
 - Setting up or migrating a repository to a professional branching model
@@ -271,6 +338,8 @@ Each prompt is modular. You can:
 - **Adjust focus areas** -- VECNA can prioritize memory over I/O by reordering the `<focus_areas>` section
 - **Combine prompts** -- Use GENIE to scaffold, BLOB first for security, then VECNA for performance of the cleaned code
 - **Layer ZETA** -- Optimize a vague requirement with ZETA first, then feed the result to VECNA or BLOB
+- **GXT for GNOME** -- Run GXT checks alongside BLOB (security) when building extensions that touch D-Bus or external processes
+- **WRYT for academic work** -- Use WRYT to produce undergraduate-level assignments with Harvard citations and formal tone
 - **Switch LLM variants mid-stream** -- Start with Claude's XML, switch to GPT's Markdown if needed
 
 ---
@@ -286,6 +355,10 @@ Each prompt is modular. You can:
     |   |-- ZETA_Finalized_Multi_LLM.md     # Prompt optimizer (5 variants)
     |-- GENIE/
     |   |-- GENIE_Finalized_Multi_LLM.md    # Project foundation architect (5 variants)
+    |-- GXT/
+    |   |-- GXT_Finalized_Multi_LLM.md      # GNOME eXtension Toolkit (recursive checklist)
+    |-- WRYT/
+    |   |-- WRYT_Finalized.md               # Academic Writing Assistant (undergraduate)
     |-- version-control.md                    # GitCore branching strategy
     |-- README.md                             # This file
     |-- LICENSE                               # MIT
@@ -341,7 +414,11 @@ Future iterations may include:
 - Integration templates (GitHub Actions, CI/CD pipelines)
 - Automated prompt testing/evaluation framework
 - GENIE extensions (cloud provider scaffolding, Docker/K8s templates)
+- GXT multi-LLM variants (Claude XML, GPT Markdown, Gemini, Llama, Mistral)
+- GXT coverage for GNOME 46+ API changes and new extension surfaces
+- WRYT multi-LLM variants (Claude XML, GPT Markdown, Gemini, Llama, Mistral)
+- WRYT discipline-specific variants (nursing, law, business, psychology, STEM)
 
 ---
 
-**Made by anorak999** | Optimized for production code intelligence
+**Made by anorak999** | Optimized for production code intelligence, security, and academic writing
